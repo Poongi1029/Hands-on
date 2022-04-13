@@ -1,0 +1,8 @@
+<h1>Parent Component</h1>
+<div>
+    <button (click)="userLoggedIn=true">login</button>
+    <button (click)="userLoggedIn=false">logoff</button> {{userLoggedIn}}
+</div>
+<app-child #child [loggedIn]="userLoggedIn"></app-child>
+{{child.name}}
+<button (click)="child.greetpoo()">Greet</button>
